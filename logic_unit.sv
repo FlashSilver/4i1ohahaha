@@ -35,7 +35,7 @@ module LogU(
     or l2 (temp2, a, b);
     xor l3 (temp3, a, b);
     not l4 (temp4, a);
-    shift_left l5 (.a(a), .out(temp5);
+    shift_left l5 (.a(a), .out(temp5));
     
     mux81_ins a1 (
                .a(temp1),
