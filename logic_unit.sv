@@ -42,7 +42,7 @@ module LogU(
                .b(temp2),
                .c(temp3),
                .d(temp4),
-                .e(temp5),
+                .e(cin),
                .f(1'bz),
                .g(1'bz),
                .h(1'bz),
@@ -52,5 +52,8 @@ module LogU(
                .out(out)
                );
                 
-    
+    logic [2:0] opsel;
+    assign opsel = {opsel0, opsel1, opsel2}
+    assign cout = ( opsel == 3'b101? a: 1'b0)
+        
 endmodule
