@@ -29,13 +29,12 @@ module LogU(
     output logic out
     );
     
-    logic temp1, temp2, temp3, temp4, temp5;
+    logic temp1, temp2, temp3, temp4;
     
     and l1 (temp1, a, b);
     or l2 (temp2, a, b);
     xor l3 (temp3, a, b);
     not l4 (temp4, a);
-    shift_left l5 (.a(a), .out(temp5));
     
     mux81_ins a1 (
                .a(temp1),
