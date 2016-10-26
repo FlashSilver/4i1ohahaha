@@ -26,6 +26,7 @@ module LogU(
     input logic opsel0,
     input logic opsel1,
     input logic opsel2,
+    input logic cin,
     output logic out
     );
     
